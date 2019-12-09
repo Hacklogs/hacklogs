@@ -1,5 +1,6 @@
 const Discord = require("discord.js")
 const client = new Discord.Client()
+const token = require("./token.json")
 
 prefix = "hl"
 
@@ -16,7 +17,6 @@ client.on("message", msg => {
 
     msg.channel.send(hlAll)
   }
-
   if(msg.content == prefix + " -h"){
     hlHelp = new Discord.RichEmbed()
     .setTitle ("help")
@@ -36,4 +36,4 @@ client.on("message", msg => {
 })
 
 
-client.login("NjUzMTc3NzUwNTM3ODk1OTUy.Xe5RzQ.PS4wNEugiEDZyHxJIGGjl2wIC7w")
+client.login(token.tokenfile)
