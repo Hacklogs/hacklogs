@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 const client = new Discord.Client()
-const token = require("./token.json")
+
 
 prefix = "hl"
 
@@ -36,4 +36,4 @@ client.on("message", msg => {
 })
 
 
-client.login(token.tokenfile)
+client.login('your_token')
